@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Liberty Mutual IT Relations Survey" content = "width=device-width">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>Developer Relations Division Survey</title>
+        <link rel="icon" href="images/favicon.png"></link>
+    </head>
+    <body>
+        <div class="liberty-yellow">
+            <h1 class="liberty-blue">Survey</h1>
+        <nav class="navbar">
+        <ul>
+            <li><a href="https://www.libertymutual.com/">Lliberty Mutual Home Page</a> </li>
+            <li><a href="index.html">Liberty Mutual IT Relations</a></li>
+            <li><a href="#">Survey</a></li>
+        </ul>
+    </nav>
+</div>
+        <form>
+            <div>
+                <label for="name">Name
+                    <input type="text" placeholder="Enter your name" required>
+                </label>
+            </div>
+            <div>
+                <label for="email">e-mail
+                    <input type="email" placeholder="Enter your email" required>
+                </label>
+            </div>
+            <div>
+                <label for="n-number">N-Number
+                    <input type="N-Number" placeholder="Enter your N-Number">
+                </label>
+            </div>
+            <div>
+                <label for="age">Age
+                    <input type="age" placeholder="Enter your age" min="18" max="100">
+                </label>
+            </div>
+            <div>
+                <label for="current-role">Which option best describes your current role as it relates to IT?
+                   <br>
+                    <div class="dropdown">
+                        <button class="dropbtn">Select a role</button>
+                        <div class="dropdown-content">
+                            <a href="#">I don't work in IT but I want to</a>
+                            <a href="#">I work in IT</a>
+                            <a href="#">I work in IT but I don't want to</a>
+                            <a href="#">I am a manager of IT personnel</a>
+                            <a href="#">Other</a>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div>
+                <p>Would you recommend employment at Liberty Mutual to an IT
+                professional?
+                <br>
+                    <input type="radio" id="definitely" name="redommendation" value="Definitely">  
+                    <label for="definitely">Definitely</label>
+                    <input type="radio" id="maybe" name="redommendation" value="Maybe">  
+                    <label for="maybe">Maybe</label> 
+                    <input type="radio" id="notsure" name="redommendation" value="Not Sure">  
+                    <label for="notsure">Not Sure</label>               
+            </div>
+            <div>
+                <label for="remove-tech">What current technology at Liberty Mutual do you most feel should be phased out??
+                   <br>
+                    <div class="dropdown">
+                        <button class="dropbtn">Select an option</button>
+                        <div class="dropdown-content">
+                            <a href="#">ASP.NET WebForms</a>
+                            <a href="#">Java</a>
+                            <a href="#">COBOL</a>
+                            <a href="#">SSIS</a>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div>
+                <p>What technology would you like to see embraced in Liberty Mutual's IT
+                    operations? (Check all that apply)</p>
+                    <input type="checkbox" id="react" name="react" value="React.js">
+                    <label for="react">React.js</label>
+                    <input type="checkbox" id="micro" name="micro" value="Microservices">
+                    <label for="micro">Microservices</label>
+                    <input type="checkbox" id="golang" name="golang" value="Golang">
+                    <label for="react">Golang</label>
+                    <input type="checkbox" id="custom" name="custom" value="Custom Middleware">
+                    <label for="custom">"Custom Middleware"</label>
+            </div>
+            <div>
+                <label for="comments">Any Comments or suggestions?
+                    <br>
+                    <textarea name="comments" >Enter your comments here...</textarea>
+                </label>
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+    <footer>
+        <p>&copy Copyright 2020 by Liberty Mutual. All rights reserved.</p>
+    </footer>
+</html>
